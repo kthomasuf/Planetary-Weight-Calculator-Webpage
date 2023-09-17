@@ -15,7 +15,7 @@ const calculateWeight = (ev)=> {
   else if (planetSelection == "Venus") {
     result = (Number(userWeight) * 0.905);
   }
-  else if (planetSelection == "earth") {
+  else if (planetSelection == "Earth") {
     document.getElementById('result').innerHTML = Number(userWeight).toFixed(1);
     return;
   }
