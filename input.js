@@ -103,7 +103,7 @@ const translatePageJapanese = (ev)=> {
 const changeImage = (ev)=> {
   ev.preventDefault();
   let planetSelection = document.getElementById('planet-menu').value;
-  document.getElementById('planet-image').src = "images/" + planetSelection + ".png";
+  document.getElementById('planet-image').src = "..images/" + planetSelection + ".png";
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
