@@ -1,0 +1,8 @@
+body {
+  min-height: 100vh;
+  background: #0a0419;
+  background-image: url("../images/Space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}

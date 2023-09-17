@@ -1,0 +1,111 @@
+.english-button,
+.spanish-button,
+.japanese-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(85, 99, 255);
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 7px;
+  transition: 0.6s ease-out;
+}
+
+.english-button:hover,
+.spanish-button:hover,
+.japanese-button:hover {
+  cursor: pointer;
+  background-color: rgb(124, 135, 255);
+}
+
+.japanese-button .tooltip {
+  position: absolute;
+  background-color: rgb(85, 99, 255);
+  color: white;
+  font-family: Poppins, Arial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 11px;
+  font-size: 12px;
+  bottom: -35px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.japanese-button:hover .tooltip {
+  opacity: 1;
+}
+
+.spanish-button {
+  margin: 0px 5px 0px 5px;
+}
+
+.planet-menu {
+  background-color: white;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 10px;
+  border-color: rgb(85, 99, 255);
+  border-width: 2px;
+  border-radius: 4px;
+  font-family: Poppins, Arial;
+  font-size: 16px;
+}
+
+.input-field-section {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.enter-weight-container {
+  display: flex;
+}
+
+.enter-weight-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter-weight {
+  background-color: white;
+  border-style: solid;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: Poppins, Arial;
+  font-size: 16px;
+  border-color: rgb(85, 99, 255);
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: white;
+  border-style: solid;
+  padding: 10px;
+  font-family: Poppins, Arial;
+  font-size: 16px;
+  border-color: rgb(85, 99, 255);
+  border-width: 2px;
+  border-radius: 4px;
+  transition: 0.6s ease-out;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(124, 135, 255);
+}

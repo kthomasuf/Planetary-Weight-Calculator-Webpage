@@ -1,0 +1,42 @@
+/*
+This code was inspired by the the code used in the video: https://www.youtube.com/watch?v=wuUSVEcK-kM
+*/
+
+.stars-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.stars {
+  position: relative;
+  display: flex;
+}
+
+.stars span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #bcf3ff;
+  margin: 0 25px;
+  box-shadow: 0 0 0 10px #91c9d644, 0 0 50px #bcf3ff, 0 0 100px #bcf3ff;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(225s / var(--i));
+}
+
+.stars span:nth-child(even) {
+  background: #ffe2b4;
+  box-shadow: 0 0 0 10px #dec49b44, 0 0 50px #ffe2b4, 0 0 100px #ffe2b4;
+}
+
+@keyframes animate {
+  0%
+  {
+    transform: translateY(100vh) scale(0.05);
+  }
+  100%
+  {
+    transform: translateX(0vh) scale(0.1);
+  }
+}
