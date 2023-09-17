@@ -9,32 +9,32 @@ const calculateWeight = (ev)=> {
     return;
   }
 
-  if (planetSelection == "mercury") {
+  if (planetSelection == "Mercury") {
     result = (Number(userWeight) * 0.377);
   }
-  else if (planetSelection == "venus") {
+  else if (planetSelection == "Venus") {
     result = (Number(userWeight) * 0.905);
   }
   else if (planetSelection == "earth") {
     document.getElementById('result').innerHTML = Number(userWeight).toFixed(1);
     return;
   }
-  else if (planetSelection == "mars") {
+  else if (planetSelection == "Mars") {
     result = (Number(userWeight) * 0.379);
   }
-  else if (planetSelection == "jupiter") {
+  else if (planetSelection == "Jupiter") {
     result = (Number(userWeight) * 2.528);
   }
-  else if (planetSelection == "saturn") {
+  else if (planetSelection == "Saturn") {
     result = (Number(userWeight) * 1.065);
   }
-  else if (planetSelection == "uranus") {
+  else if (planetSelection == "Uranus") {
     result = (Number(userWeight) * 0.886);
   }
-  else if (planetSelection == "neptune") {
+  else if (planetSelection == "Neptune") {
     result = (Number(userWeight) * 1.137);
   }
-  else if (planetSelection == "pluto") {
+  else if (planetSelection == "Pluto") {
     result = (Number(userWeight) * 0.063);
   }
   document.getElementById('result').innerHTML = result.toFixed(1);
